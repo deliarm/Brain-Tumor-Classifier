@@ -5,3 +5,4 @@ tensorflow-metal
 tqdm
 opencv-python
 imutils
+scikit-learn
