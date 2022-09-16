@@ -32,15 +32,8 @@ The Convolutional Neural Net (CNN) I used for this project was ResNet-50V2. The 
 This image shows a single residual block, which uses a skip connection.
 ![gli](./utils/res_block.png)
 
-
-
 The ResNet-50 model consists of 5 stages each with a convolution and Identity block, followed by some final layers to get a 4 dimensional vector as output. The network has 23,527,556 trainable parameters in total.
 ![res](/utils/res_net.png)
-![ScreenShot](utils/res_net.png)
-<img src="utils/resnet.png" alt="Alt text" title="Optional title">
-<img src="/utils/resnet.png" alt="Alt2" title="Optional title">
-<img src="./utils/resnet.png" alt="Alt3" title="Optional title">
-
 
 The end of the network has a single ***GlobalAveragePooling2D*** layer, this takes the (8, 8, 2048) dimension output of the 5th stage and turns it into a single vector of size 2048 by taking the average of each channel. The image below depicts this process. 
 
