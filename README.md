@@ -57,7 +57,7 @@ Overall the model performed fairly, however with more data it could be possible 
 
 
 
-## References
+### References
 https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset?resource=download
 
 https://github.com/masoudnick/Brain-Tumor-MRI-Classification/blob/main/Preprocessing.py
