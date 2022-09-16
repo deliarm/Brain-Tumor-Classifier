@@ -19,7 +19,7 @@ Brain tumors come in all different forms and there are many classifications of t
 
 |              Gliomas             |         Meningiomas                 |        Pituitary adenomas          | 
 |----------------------------------|-------------------------------------|------------------------------------|
-| ![gli](./utils/glioma_image.JPEG)|![men](./utils/meningioma_image.JPEG)|![pit](./utils/pituitary_image.JPEG)|
+| ![gli](./utils/glioma_image.jpeg)|![men](./utils/meningioma_image.jpeg)|![pit](./utils/pituitary_image.JPEG)|
 
 <br />
 <br />
@@ -34,14 +34,14 @@ This image shows a single residual block, which uses a skip connection.
 
 
 The ResNet-50 model consists of 5 stages each with a convolution and Identity block, followed by some final layers to get a 4 dimensional vector as output. The network has 23,527,556 trainable parameters in total.
-![res](./utils/res_net.PNG)
+![res](./utils/res_net.png)
 
 The end of the network has a single ***GlobalAveragePooling2D*** layer, this takes the (8, 8, 2048) dimension output of the 5th stage and turns it into a single vector of size 2048 by taking the average of each channel. The image below depicts this process. 
 
-![gap](./utils/global_average_pooling.PNG)
+![gap](./utils/global_average_pooling.png)
 
 Next I included a ***Dropout()*** layer with a 50% dropout rate for each node, this was put in place to prevent overfitting of the model. The photo below shows a Dropout layer.
-![drp](./utils/dropout.PNG)
+![drp](./utils/dropout.png)
 
 Finally, the output layer was a regular ***Dense()** (fully connected) layer which was 4 dimensional. This was to represent the 4 possible outcomes which are shown in the table below:
 
