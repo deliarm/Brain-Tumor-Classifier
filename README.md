@@ -36,6 +36,7 @@ This image shows a single residual block, which uses a skip connection.
 
 The ResNet-50 model consists of 5 stages each with a convolution and Identity block, followed by some final layers to get a 4 dimensional vector as output. The network has 23,527,556 trainable parameters in total.
 ![res](/utils/res_net.png)
+![ScreenShot](/utils/res_net.png)
 <img src="utils/resnet" alt="Alt text" title="Optional title">
 <img src="/utils/resnet" alt="Alt2" title="Optional title">
 <img src="./utils/resnet" alt="Alt3" title="Optional title">
