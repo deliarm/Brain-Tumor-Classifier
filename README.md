@@ -45,7 +45,7 @@ Next I included a ***Dropout()*** layer with a 50% dropout rate for each node, t
 
 Finally, the output layer was a regular ***Dense()** (fully connected) layer which was 4 dimensional. This was to represent the 4 possible outcomes which are shown in the table below:
 
-![mat](./utils/mats.png)
+![mat](./utils/mats.PNG)
 
 ### Results
 
